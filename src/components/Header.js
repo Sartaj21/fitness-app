@@ -1,6 +1,9 @@
 import React from 'react'
 import './Header.css'
-import Home from './home';
+import About from './about';
+import signUp from './sign-up';
+import Login from './login';
+import Try from './try';
 import {Link} from 'react-router-dom';
 const Header = () => {
     return (
@@ -11,10 +14,10 @@ const Header = () => {
                 </div>
 
                 <div class ="main-header ">
-                    <a href="."><p>Try</p></a>
-                    <a href="."><p>Join</p></a>
-                    <a href="."><p>Log In</p></a>
-                    <Link to="/about">about</Link>
+                    <Link to="/about">About</Link>
+                    <Link to='/try'>Try</Link>
+                    <Link to='/join'>Join</Link>
+                    <Link to="/signup">Sign Up</Link>
                 </div>
             </div>
         </header>
