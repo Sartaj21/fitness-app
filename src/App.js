@@ -5,14 +5,14 @@ import About from './components/about'
 import Try from './components/try'
 import SignUp from'./components/sign-up'
 import Home from './components/home.js'
+import {createHashHistory } from 'history'
+
 function App() {
   return (
-    <Router>
+    <Router history={createHashHistory}>
 
             <Switch>
-                <Route path="" component>
-                  < Home/>
-                </Route>
+                
                 <Route path="/about" component>
                     <About />
                 </Route>
@@ -22,8 +22,11 @@ function App() {
                 <Route path="/join" component>
                   <SignUp />
                 </Route>
-                <Route path="/try" component>
+                <Route path="/try" component={Try}>
                    <Try />
+                </Route>
+                 <Route path="/" component={Home}>
+                  < Home/>
                 </Route>
             </Switch>
     <div className="App">

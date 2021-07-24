@@ -13,12 +13,13 @@ html, body {
 }  
 .load_screen h2{
     padding-top: 40vh;
-    padding-left: 80vh;
+    padding-left: 50vh;
     position: relative;
     left:auto;
     right: auto;
     top:auto;
     bottom:auto;
+    overflow:visible;
 }
 
  h2 {
