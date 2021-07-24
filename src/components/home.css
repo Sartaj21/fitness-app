@@ -1,0 +1,62 @@
+
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: rgb(35, 30, 30);
+    color: whitesmoke;
+    
+}
+.test{
+     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    
+}
+
+.test h2{
+    padding-top: 40vh;
+    padding-left: 80vh;
+    position: relative;
+    left:auto;
+    right: auto;
+    top:auto;
+    bottom:auto;
+}
+
+.test h2 {
+  width: 22ch;
+
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 2em;
+  justify-content: center;
+  color: white;
+}
+
+.image{
+    justify-content: center
+}
+@keyframes typing {
+  from {
+    width: 0;
+    height: 10%;
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent  }
+}
+
+.test button{
+    background-color: transparent;
+    border-color: whitesmoke;
+    height:7vh;
+    width: 20vh;
+    color:whitesmoke;
+    margin-right: 55%;
+    margin-left: 45%;
+}

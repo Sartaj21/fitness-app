@@ -4,11 +4,15 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import About from './components/about'
 import Try from './components/try'
 import SignUp from'./components/sign-up'
+import Home from './components/home.js'
 function App() {
   return (
     <Router>
 
             <Switch>
+                <Route path="" component>
+                  < Home/>
+                </Route>
                 <Route path="/about" component>
                     <About />
                 </Route>

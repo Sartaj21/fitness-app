@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css'
-import About from './about';
+import About from './about'
 import signUp from './sign-up';
 import Login from './login';
 import Try from './try';
@@ -10,10 +10,11 @@ const Header = () => {
         <header>
             <div className = 'header'>
                 <div class="left_logo">
-                    <h2>Op Fitness</h2>
+                    <h2></h2>
                 </div>
 
                 <div class ="main-header ">
+                    <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
                     <Link to='/try'>Try</Link>
                     <Link to='/join'>Join</Link>
