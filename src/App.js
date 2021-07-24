@@ -18,8 +18,8 @@ function App() {
                 <Route path="/join" component>
                   <SignUp />
                 </Route>
-                <Route path="/try"component>
-                  <Try />
+                <Route path="/try" component>
+                   <Try />
                 </Route>
             </Switch>
     <div className="App">
